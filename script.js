@@ -92,10 +92,8 @@ function handleYesClick() {
         from_name: "Valentine Webpage",
         message: "Someone clicked YES! 💖",
         clicked_time: clickedTime
-    }).then(() => {
-        window.location.href = "yes_page.html";
-    }).catch((error) => {
-        console.error("Email failed to send:", error);
-        alert("Oops! Something went wrong while sending the email.");
-    });
+    })
+
+    window.location.href = "yes_page.html";
+
 }
